@@ -94,7 +94,11 @@ def get_pid(filename: str) -> str | None:
         return None
 
 
-EAGLE_API_URL = "http://172.26.208.1:41595"
+# Modify Here
+# Change it to your eagle api url, usually http://127.0.0.1:41595
+# but may vary if you are running eagle on another machine
+# or running this script in WSL2
+EAGLE_API_URL = "http://127.0.0.1:41595"
 
 
 async def get_target_list(session: aiohttp.ClientSession):
