@@ -46,7 +46,12 @@
 
 ## 💡 介绍
 
-Siyuan Helper 是一个思源笔记 API 的封装库。
+这是一个遍历 Eagle 文件，识别出来自 Pixiv 的图片，然后抓取 Pixiv 上的元数据写入 Eagle 的小工具。
+
+针对我自己的 use case 做了一些特化，如需使用可能需要自行修改一些代码。
+
+具体的修改地点在 `pixiv_metadata/__main__.py` 中，搜索 `Modify Here`，有注释指引。
+
 
 <p align="right">(<a href="#top">回到顶部</a>)</p>
 
