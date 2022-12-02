@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "pixiv_metadata"
+version = "0.1.0"
+description = "A tiny script to download metadata from pixiv."
+authors = ["Clouder0 <clouder0@outlook.com>"]
+license = "MIT"
+repository = "https://www.github.com/Clouder0/pixiv-metadata"
+documentation = "https://www.github.com/Clouder0/pixiv-metadata"
+readme = "README.md"
+classifiers = [
+    "Framework :: tox",
+    "Framework :: Pytest",
+    "Typing :: Typed",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+]
+packages = [{include = "pixiv_metadata"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+mypy = "^0.991"
+tox = "^3.27.1"
+pre-commit = "^2.20.0"
+flake8 = "^6.0.0"
+black = "^22.10.0"
+isort = "^5.10.1"
+pytest-cov = "^4.0.0"
+pytest-random-order = "^1.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
